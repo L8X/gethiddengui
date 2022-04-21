@@ -130,5 +130,9 @@ Folder.Parent = HideInMe
 local function gethiddengui()
     return cloneref(Folder)
 end
+
 getgenv().gethiddengui = gethiddengui
+
+if not identifyexecutor() == "ScriptWare" then
 getgenv().gethui = gethiddengui
+end
