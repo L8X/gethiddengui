@@ -1,4 +1,6 @@
-
+local cloneref = cloneref or function(ref)
+    return ref
+end
 
 local CoreGui = cloneref(game:GetService("CoreGui"))
 local Folder = cloneref(Instance.new("Folder"))
