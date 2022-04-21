@@ -1,3 +1,6 @@
+--- gethiddengui was made by nul#3174 ---
+
+
 local cloneref = cloneref or function(ref)
     return ref
 end
