@@ -7,4 +7,6 @@ Load using:
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/L8X/gethiddengui/main/src.lua", false))()
 
-You can parent Guis after that line in your code using Gui.Parent = gethiddengui().
+You can parent Guis after that line in your code using Gui.Parent = gethiddengui()
+
+PS: getgenv().gethui will not be overwritten for Script-Ware users.
