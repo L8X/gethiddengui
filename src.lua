@@ -1,6 +1,6 @@
 --- gethiddengui was made by nul#3174 ---
 
-local supported_cloneref = syn_cloneref or cloneref
+local supported_cloneref = syn_cloneref or cloneref or clone_ref
 local getconnections = syn_getconnections or getconnections or get_connections
 local gethui = gethui or get_hidden_ui or hidden_ui
 
