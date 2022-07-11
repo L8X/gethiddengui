@@ -8,6 +8,14 @@ local cloneref = supported_cloneref or function(ref)
     return ref
 end
 
+if cloneref and identifyexecutor and identifyexecutor():find("Temple") then
+cloneref = function(ref)
+return ref
+end
+getgenv().cloneref = cloneref
+end
+end
+
 local CoreGui = cloneref(game:GetService("CoreGui"))
 local Folder = cloneref(Instance.new("Folder"))
 Folder.Name = "RobloxGui"
