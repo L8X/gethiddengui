@@ -1,7 +1,7 @@
 --- gethiddengui was made by nul#3174 ---
 
-local supported_cloneref = syn_cloneref or cloneref or clone_ref
-local getconnections = syn_getconnections or getconnections or get_connections
+local supported_cloneref =  cloneref or clone_ref
+local getconnections = getconnections or get_connections
 local gethui = gethui or get_hidden_ui or hidden_ui
 
 local cloneref = supported_cloneref or function(ref)
@@ -134,6 +134,74 @@ task.spawn(function()
     end)
 end)
 Folder.Parent = HideInMe
+task.spawn(function()
+    pcall(function()
+        if getconnections then
+            
+            for i, v in next, getconnections(CoreGui.ChildAdded) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(CoreGui.ChildRemoved) do
+                v:Enable()
+            end
+                               
+            for i, v in next, getconnections(CoreGui.DescendantAdded) do
+                v:Enable()
+            end
+                                
+            for i, v in next, getconnections(CoreGui.DescendantRemoving) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(CoreGui.childAdded) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(CoreGui.Destroying) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(CoreGui.Changed) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(CoreGui.AncestryChanged) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.DescendantAdded) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.DescendantRemoving) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.ChildAdded) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.ChildRemoved) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.Destroying) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.Changed) do
+                v:Enable()
+            end
+            
+            for i, v in next, getconnections(RobloxGui.AncestryChanged) do
+                v:Enable()
+            end
+
+        end
+    end)
+end)
+
 
 local function gethiddengui()
     return cloneref(Folder)
