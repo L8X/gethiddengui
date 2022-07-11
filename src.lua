@@ -1,6 +1,6 @@
 --- gethiddengui was made by nul#3174 ---
 
-local supported_cloneref =  cloneref or clone_ref
+local supported_cloneref = cloneref or clone_ref
 local getconnections = getconnections or get_connections
 local gethui = gethui or get_hidden_ui or hidden_ui
 
@@ -13,7 +13,6 @@ cloneref = function(ref)
 return ref
 end
 getgenv().cloneref = cloneref
-end
 end
 
 local CoreGui = cloneref(game:GetService("CoreGui"))
