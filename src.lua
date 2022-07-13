@@ -107,8 +107,6 @@ task.spawn(function()
     pcall(function()
         if syn and syn.protect_gui then
             syn.protect_gui(Folder)
-            syn.protect_gui(CoreGui)
-            syn.protect_gui(RobloxGui)
         end
     end)
 end)
