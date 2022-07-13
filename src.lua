@@ -68,34 +68,6 @@ task.spawn(function()
                 v:Disable()
             end
             
-            for i, v in next, getconnections(RobloxGui.DescendantAdded) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.DescendantRemoving) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.ChildAdded) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.ChildRemoved) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.Destroying) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.Changed) do
-                v:Disable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.AncestryChanged) do
-                v:Disable()
-            end
-            
             for i, v in next, getconnections(Folder.ChildAdded) do
                 v:Disable()
             end
@@ -174,34 +146,6 @@ task.spawn(function()
             end
             
             for i, v in next, getconnections(CoreGui.AncestryChanged) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.DescendantAdded) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.DescendantRemoving) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.ChildAdded) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.ChildRemoved) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.Destroying) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.Changed) do
-                v:Enable()
-            end
-            
-            for i, v in next, getconnections(RobloxGui.AncestryChanged) do
                 v:Enable()
             end
 
